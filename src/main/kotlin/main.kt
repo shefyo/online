@@ -17,7 +17,7 @@ fun agoToText(secondsAgo: Int): String {
 
 fun minutesAgoText(minutes: Int): String {
     return when {
-        minutes == 1 || minutes == 11 || minutes == 21 || minutes == 31 || minutes == 41 || minutes == 51 -> "$minutes минуту"
+        minutes == 1 || minutes == 21 || minutes == 31 || minutes == 41 || minutes == 51 -> "$minutes минуту"
         minutes in 2..4 || minutes in 22..24 || minutes in 32..34 || minutes in 42..44 || minutes in 52..54 -> "$minutes минуты"
         else -> "$minutes минут"
     }
